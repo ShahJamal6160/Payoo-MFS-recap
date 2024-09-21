@@ -24,10 +24,11 @@
                     </div>
                     <div class="divider"></div>
                     <!-- feature -->
-                    <div>
-                        <button id="show-add-money-form" class="btn btn-lg">Add Money</button>
-                        <button id="show-cash-out-form" class="btn btn-lg">Cash Out</button>
-                        <button id="show-transactin-sec" class="btn btn-lg">Transaction History</button>
+                    <div class="space-x-2 space-y-2 ">
+                        <button id="show-add-money-form" class="btn btn-lg ">Add Money</button>
+                        <button id="show-cash-out-form" class="btn btn-lg">Cashout</button>
+                        <button id="show-transfer-form" class="btn btn-lg">Transfer Money</button>
+                        <button id="show-transactin-sec" class="btn btn-lg">Transactions</button>
                     </div>
 
                     <div class="divider"></div>
@@ -80,13 +81,44 @@
                     </div>
                      <!-- cash out end -->
 
+                     <!-- transfer section start -->
+                     <div id="transfer-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Account Number</span>
+                                </label>
+                                <input id="input-transfer" type="text" placeholder="enter your number"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input id="input-amount" type="text" placeholder="Your Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">PIN</span>
+                                </label>
+                                <input id="input-transfer-pin" type="password" placeholder="Pin Number"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-transfer" class="btn btn-primary">Send Now</button>
+                            </div>
+                        </form>
+                    </div>
+                     <!-- transfer section end -->
+
                      <!-- transaction history -->
 
                      <div id="transaction-sec" class="hidden">
                         <h2 class="text-2xl text-center">Transaction History</h2>
 
                         <div id="transaction-container">
-                            
+
 
                         </div>
                      </div>
@@ -99,7 +131,9 @@
     <script src="js/utilities.js"></script>
     <script src="js/add-money.js"></script>
     <script src="js/cash-out.js"></script>
+    <script src="js/transfer.js"></script>
     <script src="js/features.js"></script>
+
 </body>
 
 </html>

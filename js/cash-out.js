@@ -23,7 +23,7 @@ document.getElementById('btn-cash-out')
             div.classList.add('bg-yellow-300');
             div.innerHTML = `
                 <h2 clss="text-3xl font-bold">Cash Out</h2>
-                <p> ${cashOut} Withdraw. New Balance ${newBalance}
+                <p> ${cashOut} Withdraw. New Balance ${newBalance} </p>
             `
             // console.log(div);
             document.getElementById('transaction-container').appendChild(div);

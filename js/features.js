@@ -8,8 +8,16 @@ document.getElementById('show-cash-out-form')
         showSectonById('cash-out-form');
 
     })
-
-    document.getElementById('show-transactin-sec')
+    
+document.getElementById('show-transactin-sec')
         .addEventListener('click', function(){
             showSectonById('transaction-sec');
         })
+
+document.getElementById('show-transfer-form')
+        .addEventListener('click', function(){
+            showSectonById('transfer-form')
+        })
+
+
+

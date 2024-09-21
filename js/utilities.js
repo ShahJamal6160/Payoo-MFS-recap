@@ -16,6 +16,7 @@ function getTextValueById(id){
 function showSectonById(id){
     document.getElementById('add-money-form').classList.add('hidden')
     document.getElementById('cash-out-form').classList.add('hidden')
+    document.getElementById('transfer-form').classList.add('hidden')
     document.getElementById('transaction-sec').classList.add('hidden')
     
      document.getElementById(id).classList.remove('hidden');
