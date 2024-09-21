@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Logo" style="width: 50px; margin-bottom: 20px;">
+        <input type="text" id="mobile" placeholder="Enter your number" maxlength="10">
+        <input type="password" id="pin" placeholder="Enter 4 Digit Pin" maxlength="4">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            var mobile = document.getElementById('mobile').value;
+            var pin = document.getElementById('pin').value;
+
+            if (mobile.length === 10 && pin.length === 4) {
+                alert("Login successful!");
+                // Here you can add code to handle login, e.g., sending data to server.
+            } else {
+                alert("Please enter a valid mobile number and 4-digit pin.");
+            }
+        }
+    </script>
+</body>
+</html>
