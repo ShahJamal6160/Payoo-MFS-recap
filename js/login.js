@@ -26,7 +26,7 @@ document.getElementById('btn-login')
         // console.log(phoneNumber, pinNumber);
         if(phoneNumber === "10" && pinNumber === "1234"){
             console.log("your are login")
-            window.location.href = '/home.html';
+            window.location.href = './home.html';
         }
         else{
             AudioListener("Wrong Phone & pin Number")
